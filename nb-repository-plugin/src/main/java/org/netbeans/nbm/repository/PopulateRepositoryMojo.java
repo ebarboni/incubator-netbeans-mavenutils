@@ -295,7 +295,7 @@ public class PopulateRepositoryMojo
                 throw new MojoExecutionException(
                     "parentGAV should respect the following format groupId:artefactId:version" );
             }
-            artefactParent.setArtifactId( split[0] );
+            artefactParent.setGroupId( split[0] );
             artefactParent.setArtifactId( split[1] );
             artefactParent.setVersion( split[2] );
         }
